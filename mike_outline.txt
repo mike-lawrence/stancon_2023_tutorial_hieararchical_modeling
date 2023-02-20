@@ -6,7 +6,7 @@ On "why hierarchical" (pooling):
 	Conceptual: Hierarchical, single outcome, unpooled (`model{theta[i]~std_normal();Y[i]~binomial(theta[i])}`)
 	Conceptual: Hierarchical, single outcome, partially-pooled (`model{theta[i]~normal(mu,sigma);Y[i]~binomial(theta[i])}`)
 	optimization: sufficient stats for binomial
-	optimization: sufficient stats for gussian
+	optimization: sufficient stats for gaussian
 
 On hierarchical multivariate models:
 	Conceptual: Non-hierarchical two-latents multi-normal
