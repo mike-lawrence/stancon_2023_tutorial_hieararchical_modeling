@@ -1,0 +1,33 @@
+** all the below with both binomial & Gaussian likelihoods?
+
+On "why hierarchical" (pooling):
+	Conceptual: Non-hierarchical, single outcome (`model{theta~std_normal();Y~binomial(theta)}`)
+	Conceptual: Hierarchical, single outcome, completely-pooled (`model{theta~std_normal();Y~binomial(theta)}`)
+	Conceptual: Hierarchical, single outcome, unpooled (`model{theta[i]~std_normal();Y[i]~binomial(theta[i])}`)
+	Conceptual: Hierarchical, single outcome, partially-pooled (`model{theta[i]~normal(mu,sigma);Y[i]~binomial(theta[i])}`)
+	optimization: sufficient stats for binomial
+	optimization: sufficient stats for gussian
+
+On hierarchical multivariate models:
+	Conceptual: Non-hierarchical two-latents multi-normal
+	Conceptual: Two latents centered
+	Conceptual: Two latents non-centered
+	Conceptual: Two latents mixed-centering
+	conceptual: contrast matrix parameterization
+	optimization: cols_dot_product faster than rows_dot_product
+	optimization: indexing for binary contrasts
+
+On complex hierarchies:
+	conceptual: crossed hierarchies (ex. psycholinguistic experiments data, Item Response Theory for ordinal data)
+	conceptual: multi-outcome-types, shared multivariate (ex. binomial outcome paired with gaussian outcome)
+	conceptual: hierarchical modelling of psychophysical function parameters, GPs
+	conceptual: super-group effects (i.e. full SUG 1.13 model)
+	conceptual: GP regression on super-group effects
+
+On massively-multivariate models:
+	conceptual: failure-modes of multivariate normal (model misspecification)
+	conceptual: correlated variables "by-hand" with SEM math
+	conceptual: simpler SEM example
+	conceptual: deeper SEM example (deeper in the hierarchical sense)
+	conceptual: SEM identification dangers & best-practices
+	
